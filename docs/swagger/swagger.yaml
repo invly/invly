@@ -1,0 +1,32 @@
+basePath: /
+host: localhost:8000
+info:
+  contact:
+    email: fabs@invly.de
+    name: Fabian Cernota
+    url: http://invly.de
+  description: Simple inventory management
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  title: invly
+  version: "1.0"
+paths:
+  /api/v1/status:
+    get:
+      consumes:
+      - application/json
+      description: Show current system state
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              type: string
+            type: array
+      summary: Show status
+      tags:
+      - status
+swagger: "2.0"
