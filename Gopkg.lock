@@ -60,6 +60,12 @@
   revision = "d5012789d6659eeed305f54c1b1542e7b65829e6"
 
 [[projects]]
+  name = "github.com/q3k/goveralls"
+  packages = ["."]
+  revision = "789b29cb81d4de953738cec0fbaefa8af2ff4ea2"
+  version = "v0.1.0"
+
+[[projects]]
   branch = "master"
   name = "github.com/swaggo/files"
   packages = ["."]
@@ -111,6 +117,12 @@
   version = "v0.3.0"
 
 [[projects]]
+  branch = "master"
+  name = "golang.org/x/tools"
+  packages = ["cover"]
+  revision = "8cc4e8a6f4841aa92a8683fca47bc5d64b58875b"
+
+[[projects]]
   name = "gopkg.in/yaml.v2"
   packages = ["."]
   revision = "5420a8b6744d3b0345ab293f6fcba19c978f1183"
@@ -119,6 +131,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "465b7b671301d65bb4abc2f03cdb9eddbe905e320813735d15adcc200727af7e"
+  inputs-digest = "456b87901f7c144653ec6a2d0d8bf9dd4261b147e2132c069308ac7476f8ad21"
   solver-name = "gps-cdcl"
   solver-version = 1

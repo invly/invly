@@ -18,11 +18,13 @@ before_install:
   - sha256sum -c .travis.bazel-0.14.1-installer-linux-x86_64.sh.sha256
   - bash bazel-0.14.1-installer-linux-x86_64.sh --user
   - go get -u github.com/swaggo/swag/cmd/swag
-  - go get github.com/mattn/goveralls
 
 script:
 - mkdir -p $HOME/gopath/src/github.com/invly/
 - ln -s $TRAVIS_BUILD_DIR $HOME/gopath/src/github.com/invly/invly || true
 - cp .bazelrc.travis .bazelrc
 - bazel test //...
-- $HOME/gopath/bin/goveralls -service=travis-ci  
+- bazel coverage //...
+- bazel build //vendor/github.com/q3k/goveralls
+- bazel-bin/vendor/github.com/q3k/goveralls/linux_amd64_stripped/goveralls -coverprofile=$(find bazel-testlogs/ -iname coverage.dat -or -iname baseline_coverage.dat | paste -sd ',') -merge=false
+
