@@ -25,4 +25,4 @@ script:
 - ln -s $TRAVIS_BUILD_DIR $HOME/gopath/src/github.com/invly/invly || true
 - cp .bazelrc.travis .bazelrc
 - bazel test //...
-- $GOPATH/bin/goveralls -service=travis-ci
+- $HOME/gopath/bin/goveralls -service=travis-ci  
