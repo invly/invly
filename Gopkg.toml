@@ -33,9 +33,6 @@
   go-tests = true
   unused-packages = true
 
-[[constraint]]
-  branch = "master"
-  name = "github.com/swaggo/http-swagger"
 
 [[constraint]]
   name = "github.com/mongodb/mongo-go-driver"

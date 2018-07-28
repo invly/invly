@@ -14,12 +14,6 @@
   revision = "de5bf2ad457846296e2031421a34e2568e304e35"
 
 [[projects]]
-  branch = "master"
-  name = "github.com/buger/jsonparser"
-  packages = ["."]
-  revision = "2cac668e8456b4284edb0715e17e2af02d3ec993"
-
-[[projects]]
   name = "github.com/go-openapi/jsonpointer"
   packages = ["."]
   revision = "3a0015ad55fa9873f41605d3e8f28cd279c32ab2"
@@ -44,18 +38,6 @@
   version = "0.15.0"
 
 [[projects]]
-  name = "github.com/go-stack/stack"
-  packages = ["."]
-  revision = "259ab82a6cad3992b4e21ff5cac294ccb06474bc"
-  version = "v1.7.0"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/golang/snappy"
-  packages = ["."]
-  revision = "2e65f85255dbc3072edf28d6b5b8efc472979f5a"
-
-[[projects]]
   name = "github.com/gorilla/context"
   packages = ["."]
   revision = "08b5f424b9271eedf6f9f0ce86cb9396ed337a42"
@@ -78,61 +60,6 @@
   revision = "d5012789d6659eeed305f54c1b1542e7b65829e6"
 
 [[projects]]
-  name = "github.com/mongodb/mongo-go-driver"
-  packages = [
-    "bson",
-    "bson/builder",
-    "bson/decimal",
-    "bson/elements",
-    "bson/objectid",
-    "bson/parser",
-    "bson/parser/ast",
-    "core/address",
-    "core/auth",
-    "core/auth/internal/gssapi",
-    "core/command",
-    "core/compressor",
-    "core/connection",
-    "core/connstring",
-    "core/description",
-    "core/dispatch",
-    "core/event",
-    "core/option",
-    "core/readconcern",
-    "core/readpref",
-    "core/result",
-    "core/session",
-    "core/tag",
-    "core/topology",
-    "core/uuid",
-    "core/version",
-    "core/wiremessage",
-    "core/writeconcern",
-    "internal",
-    "mongo",
-    "mongo/aggregateopt",
-    "mongo/changestreamopt",
-    "mongo/clientopt",
-    "mongo/collectionopt",
-    "mongo/countopt",
-    "mongo/dbopt",
-    "mongo/deleteopt",
-    "mongo/distinctopt",
-    "mongo/dropcollopt",
-    "mongo/findopt",
-    "mongo/indexopt",
-    "mongo/insertopt",
-    "mongo/listcollectionopt",
-    "mongo/listdbopt",
-    "mongo/mongoopt",
-    "mongo/replaceopt",
-    "mongo/runcmdopt",
-    "mongo/updateopt"
-  ]
-  revision = "8df56f107cdd485351eb2523992c3364114b4b2e"
-  version = "v0.0.10"
-
-[[projects]]
   branch = "master"
   name = "github.com/swaggo/files"
   packages = ["."]
@@ -152,12 +79,6 @@
 
 [[projects]]
   branch = "master"
-  name = "golang.org/x/crypto"
-  packages = ["pbkdf2"]
-  revision = "c126467f60eb25f8f27e5a981f32a87e3965053f"
-
-[[projects]]
-  branch = "master"
   name = "golang.org/x/net"
   packages = [
     "context",
@@ -166,12 +87,6 @@
     "webdav/internal/xml"
   ]
   revision = "3673e40ba22529d22c3fd7c93e97b0ce50fa7bdd"
-
-[[projects]]
-  branch = "master"
-  name = "golang.org/x/sync"
-  packages = ["semaphore"]
-  revision = "1d60e4601c6fd243af51cc01ddf169918a5407ca"
 
 [[projects]]
   name = "golang.org/x/text"
@@ -204,6 +119,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "bb75ebdc52abe6f739c4de3daf900b08fb3c7aaaf96330159cf0c61d8b960f34"
+  inputs-digest = "465b7b671301d65bb4abc2f03cdb9eddbe905e320813735d15adcc200727af7e"
   solver-name = "gps-cdcl"
   solver-version = 1
