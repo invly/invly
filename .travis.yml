@@ -18,9 +18,11 @@ before_install:
   - sha256sum -c .travis.bazel-0.14.1-installer-linux-x86_64.sh.sha256
   - bash bazel-0.14.1-installer-linux-x86_64.sh --user
   - go get -u github.com/swaggo/swag/cmd/swag
+  - go get github.com/mattn/goveralls
 
 script:
 - mkdir -p $HOME/gopath/src/github.com/invly/
 - ln -s $TRAVIS_BUILD_DIR $HOME/gopath/src/github.com/invly/invly || true
 - cp .bazelrc.travis .bazelrc
 - bazel test //...
+- $GOPATH/bin/goveralls -service=travis-ci
